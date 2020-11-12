@@ -28,7 +28,7 @@ namespace PSUnitTest
             Console.WriteLine("TestResult file : " + testRunTRXFileName);
 
 
-            Console.WriteLine(TestContext);
+           // Console.WriteLine(TestContext);
         }
 
     }
