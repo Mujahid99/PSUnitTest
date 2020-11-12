@@ -25,10 +25,10 @@ namespace PSUnitTest
             //Print the trx file name
             string testRunDirectory = TestContext.TestRunDirectory;
             string testRunTRXFileName = String.Concat(testRunDirectory, ".trx");
-            //Console.WriteLine("TestResult file : " + testRunTRXFileName);
+            Console.WriteLine("TestResult file : " + testRunTRXFileName);
 
 
-            //Console.WriteLine(TestContext);
+            Console.WriteLine(TestContext);
         }
 
     }
