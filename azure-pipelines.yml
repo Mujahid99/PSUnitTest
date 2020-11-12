@@ -12,7 +12,6 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    targetType: 'inline'
-    script: 'Start-Process -Verb RunAs E:\Mujahid-Agents\001\_work\4\s\ps.bat'
-    workingDirectory: 'E:\Mujahid-Agents\001\_work\4\s'
+    filePath: 'C:\Users\devrpvm-user\Documents\PSUnitTest\psunit.ps1'
+    workingDirectory: 'C:\Users\devrpvm-user\Documents\PSUnitTest'
 
