@@ -5,8 +5,7 @@
 
 pool:
   #vmImage: 'windows-latest'
-  name: "MujahidQA"
-  Agent.Name: "MujahidVM"
+  name: "DevRpVm"
 
 steps:
 
