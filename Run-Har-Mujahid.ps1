@@ -77,7 +77,7 @@ foreach ($entry in $har.log.entries) {
     $responses += $response 
     $i++
 }
-$muj = $responses | Export-Clixml -Path "C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults\devrpvm-user_DEVRPVM_2020-11-12_08_46_08\In\5a543749-b59c-4ce1-9469-4c22782bd9cc\DEVRPVM\sample.xml"
+$muj = $responses | Export-Clixml -Path C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults\devrpvm-user_DEVRPVM_2020-11-12_08_46_08\In\5a543749-b59c-4ce1-9469-4c22782bd9cc\DEVRPVM\sample.xml
 
 #$muj = $responses | Out-File .\ali.trx
 
