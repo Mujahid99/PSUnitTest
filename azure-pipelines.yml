@@ -13,7 +13,7 @@ steps:
 - task: PowerShell@2
   inputs:
     filePath: 'C:\Users\devrpvm-user\Documents\PSUnitTest\psunit.ps1'
-    workingDirectory: 'C:\Users\devrpvm-user\Documents\PSUnitTest'
+    workingDirectory: '$(System.DefaultWorkingDirectory)'
 
 - task: PublishTestResults@2
   inputs:
