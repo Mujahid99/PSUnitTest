@@ -8,3 +8,7 @@ pool:
   name: "MujahidQA"
   Agent.Name: "MujahidVM"
 
+steps:
+- task: CmdLine@2
+  inputs:
+    script: 'vstest.console.exe C:\Users\devrpvm-user\Documents\PSUnitTest\bin\Debug\PSUnitTest.dll /logger:trx;LogFileName=C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults\PSUnitResults.trx'
