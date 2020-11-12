@@ -12,6 +12,6 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'C:\Users\devrpvm-user\Documents\PSUnitTest\ps.bat'
+    filePath: 'C:\Users\devrpvm-user\Documents\PSUnitTest\psunit.ps1'
     workingDirectory: 'C:\Users\devrpvm-user\Documents\PSUnitTest'
 
