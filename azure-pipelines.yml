@@ -18,7 +18,7 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'TestResults\*xm'
+    testResultsFiles: 'TestResults\*xml'
     searchFolder: 'C:\Users\devrpvm-user\Documents\PSUnitTest'
     testRunTitle: 'HAR-Automation-Results'
 
