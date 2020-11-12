@@ -19,6 +19,6 @@ steps:
   inputs:
     testResultsFormat: 'VSTest'
     testResultsFiles: 'TestResults\*trx'
-    searchFolder: 'C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults'
+    searchFolder: 'C:\Users\devrpvm-user\Documents\PSUnitTest'
     testRunTitle: 'HAR-Automation-Results'
 
