@@ -20,7 +20,7 @@
 
     [switch]$preserveAuth
 )
-$harFilePath = "C:\Users\TK-LPT-0154\Downloads\grocerkey.har"
+$harFilePath = "C:\Users\devrpvm-user\Documents\grocerkey.har"
 $targetCluster="stage"
 $sourceCluster= "integ"
 $username="bb.retailer-admin@replenium.com"
@@ -29,7 +29,7 @@ $clientid= "rp_admin"
 
 # imports functionality 
 # keeps automation simple
-. C:\Users\TK-LPT-0154\source\repos\PSUnitTest\RpFunctions-Mujahid.ps1
+. C:\Users\devrpvm-user\Documents\PSUnitTest\RpFunctions-Mujahid.ps1
 
 $ErrorActionPreference = "Stop"
 
@@ -77,7 +77,7 @@ foreach ($entry in $har.log.entries) {
     $responses += $response 
     $i++
 }
-$muj = $responses | Export-Clixml -Path C:\Users\TK-LPT-0154\source\repos\PSUnitTest\sample.xml
+$muj = $responses | Export-Clixml -Path C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults\sample.xml
 
 #$muj = $responses | Out-File .\ali.trx
 
