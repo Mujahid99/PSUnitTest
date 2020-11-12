@@ -1,0 +1,16 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  #vmImage: 'windows-latest'
+  name: "MujahidQA"
+  Agent.Name: "MujahidVM"
+
+steps:
+
+- task: CmdLine@2
+  inputs:
+    script: 'cd C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow && vstest.console.exe C:\Users\devrpvm-user\Documents\PSUnitTest\bin\Debug\PSUnitTest.dll /logger:trx;LogFileName=C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults\PSUnitResults.trx'
+
