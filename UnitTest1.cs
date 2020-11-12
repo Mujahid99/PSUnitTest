@@ -20,7 +20,7 @@ namespace PSUnitTest
 
             ps.AddScript(@"C:\\Users\\devrpvm-user\\Documents\\PSUnitTest\\RpFunctions-Mujahid.ps1").AddScript(@"C:\\Users\\devrpvm-user\\Documents\\PSUnitTest\\Run-Har-Mujahid.ps1", true).AddParameter("-harFilePath", "C:\\Users\\devrpvm-user\\Documents\\grocerkey.har").AddParameter("-targetCluster", "stage").AddParameter("-sourceCluster", "integ").AddParameter("-username", "bb.retailer-admin@replenium.com").AddParameter("-password", "Test1234-").AddParameter("-clientid", "rp_admin").AddParameter("-preserveAuth", "s2libsi3u3bhh3paez4wkh4k6g4jht57kx44hqpxry6dxbkrsicq").Invoke();
             //add a file stored at c:\ location to the test result file
-            this.TestContext.AddResultFile(@"C:\\Users\\devrpvm-user\\Documents\\PSUnitTest\\TestResults\\sample.xml");
+            this.TestContext.AddResultFile("C:\\Users\\devrpvm-user\\Documents\\PSUnitTest\\TestResults\\sample.xml");
 
             //Print the trx file name
             string testRunDirectory = TestContext.TestRunDirectory;
