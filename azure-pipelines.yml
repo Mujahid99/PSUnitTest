@@ -12,10 +12,6 @@ steps:
 
 - task: PowerShell@2
   inputs:
-    filePath: 'C:\Users\devrpvm-user\Documents\PSUnitTest\ps.bat'
-- task: CmdLine@2
-  inputs:
-    script: |
-      echo cd C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TestWindow
-      echo  vstest.console.exe C:\Users\devrpvm-user\Documents\PSUnitTest\bin\Debug\PSUnitTest.dll /logger:trx;LogFileName=C:\Users\devrpvm-user\Documents\PSUnitTest\TestResults\PSUnitResults.trx
+    targetType: 'inline'
+    script: 'Start-Process -Verb RunAs C:\Users\devrpvm-user\Documents\PSUnitTest\ps.bat'
 
